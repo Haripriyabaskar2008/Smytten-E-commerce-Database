@@ -9,56 +9,56 @@ allowing customers to experience trial-size products before purchasing full-size
 workflow using a well-structured relational database.
 
 Project Objectives:
-🎯Design a normalized relational database.
-🎯Manage customer and product information efficiently.
-🎯Support both trial and full-size product purchases.
-🎯Maintain accurate order, payment, and delivery records.
-🎯Reduce data redundancy and improve consistency.
-🎯Enable efficient SQL queries and reporting.
+Design a normalized relational database.
+Manage customer and product information efficiently.
+Support both trial and full-size product purchases.
+Maintain accurate order, payment, and delivery records.
+Reduce data redundancy and improve consistency.
+Enable efficient SQL queries and reporting.
 Key Features:
-     🎯Customer Registration & Login
-     🎯Product & Category Management
-     🎯Brand Management
-     🎯Trial Product Management
-     🎯Shopping Cart
-     🎯Wishlist
-     🎯Order Management
-     🎯Payment Processing
-     🎯Delivery Tracking
-     🎯Inventory Management
-     🎯Product Reviews & Ratings
-     🎯Search & Filter Products
-     🎯Report Generation.
+     Customer Registration & Login
+     Product & Category Management
+     Brand Management
+     Trial Product Management
+     Shopping Cart
+     Wishlist
+     Order Management
+     Payment Processing
+     Delivery Tracking
+     Inventory Management
+     Product Reviews & Ratings
+     Search & Filter Products
+     Report Generation.
 🗂️ Database Modules:
-   👤 Customer
-   👨‍💼 Admin
-   🏢 Brand
-   📂 Category
-   🛍️ Product
-  🧪 Trial Product
-  🛒 Cart
-  ❤️ Wishlist
-  📦 Orders
-  📋 Order Items
-  💳 Payment
-  🚚 Delivery
-  📦 Inventory
-  🏭 Supplier
-  ⭐ Reviews
-  🎁 Offers & Coupons.
+    Customer
+    Admin
+    Brand
+    Category
+    Product
+   Trial Product
+   Cart
+   Wishlist
+   Orders
+   Order Items
+   Payment
+   Delivery
+   Inventory
+   Supplier
+   Reviews
+   Offers & Coupons.
 
   Database Concepts Used:
-     📌 Entity Relationship (ER) Diagram
-     📌 Relational Schema
-    📌  Primary Keys
-      📌 Foreign Keys
-         📌Normalization (1NF, 2NF & 3NF)
-        📌 SQL Queries
-         📌CRUD Operations
-         📌Joins
-         📌Aggregate Functions
-         📌Constraints
-         📌Data Integrity.
+      Entity Relationship (ER) Diagram
+      Relational Schema
+      Primary Keys
+       Foreign Keys
+         Normalization (1NF, 2NF & 3NF)
+         SQL Queries
+         CRUD Operations
+         Joins
+         Aggregate Functions
+         Constraints
+         Data Integrity.
 Technology	Used:
 🗄️ Database-	MySQL
 💻 Language-	SQL
@@ -72,7 +72,7 @@ by organizing data into structured tables, maintaining relationships between ent
 and supporting fast retrieval of information. The implementation provides a scalable foundation for managing products, 
 customers, orders, inventory, and transactions in an online shopping environment.
 
-🔮 Future Enhancements:
+ Future Enhancements:
  AI-Based Product Recommendation System
  Personalized Customer Dashboard
  Real-Time Inventory Tracking
