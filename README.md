@@ -29,7 +29,7 @@ Key Features:
      Product Reviews & Ratings
      Search & Filter Products
      Report Generation.
-🗂️ Database Modules:
+Database Modules:
     Customer
     Admin
     Brand
@@ -60,13 +60,13 @@ Key Features:
          Constraints
          Data Integrity.
 Technology	Used:
-🗄️ Database-	MySQL
-💻 Language-	SQL
-📐 Design	-ER Diagram
-📄 Documentation	-Microsoft Word
-🌐 Version Control-	Git & GitHub.
+Database-	MySQL
+ Language-	SQL
+ Design	-ER Diagram
+ Documentation	-Microsoft Word
+ Version Control-	Git & GitHub.
 
-🎓 Project Outcomes:
+ Project Outcomes:
      This project demonstrates how a Database Management System can efficiently handle real-world e-commerce operations
 by organizing data into structured tables, maintaining relationships between entities, improving data integrity,
 and supporting fast retrieval of information. The implementation provides a scalable foundation for managing products, 
@@ -87,6 +87,6 @@ customers, orders, inventory, and transactions in an online shopping environment
         
 Author:
    Hari priya.B
-🎓 B.Sc. Computer Science with Artificial Intelligence.
+ B.Sc. Computer Science with Artificial Intelligence.
           "A well-designed database is the backbone of every successful e-commerce platform."🌟
      
