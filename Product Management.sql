@@ -1,0 +1,154 @@
+                      SQL Query Implementation for E-Commerce Database
+ Display all products — SELECT
+SELECT * FROM PRODUCT2;
+
+ Search products based on price — WHERE
+Products with price less than ₹500:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+WHERE PRICE < 500;
+
+
+Products priced between ₹300 and ₹600:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+WHERE PRICE BETWEEN 300 AND 600;
+
+
+ Search products by category
+Skincare products — Category ID 1:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE, CATEGORY_ID
+FROM PRODUCT2
+WHERE CATEGORY_ID = 1;
+
+
+Search products using category name:
+SELECT P.PRODUCT_ID, P.PRODUCT_NAME, P.PRICE, C.CATEGORY_NAME
+FROM PRODUCT2 P
+JOIN CATEGORY2 C
+ON P.CATEGORY_ID = C.CATEGORY_ID
+WHERE C.CATEGORY_NAME = 'Skincare';
+
+
+ Search available products
+Products with stock greater than zero:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE, STOCK
+FROM PRODUCT2
+WHERE STOCK > 0;
+
+
+Out-of-stock products:
+SELECT PRODUCT_ID, PRODUCT_NAME, STOCK
+FROM PRODUCT2
+WHERE STOCK = 0;
+
+
+ Sort products by price — ORDER BY
+Low to high price:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+ORDER BY PRICE ASC;
+
+
+High to low price:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+ORDER BY PRICE DESC;
+
+
+ Retrieve unique categories — DISTINCT
+SELECT DISTINCT CATEGORY_ID
+FROM PRODUCT2;
+
+
+To display unique category names:
+SELECT DISTINCT CATEGORY_NAME
+FROM CATEGORY2;
+
+
+ Retrieve customer information
+Display all customers:
+SELECT * FROM CUSTOMER2;
+
+
+Display selected customer details:
+SELECT CUSTOMER_ID, CUSTOMER_NAME, EMAIL, PHONE_NUMBER
+FROM CUSTOMER2;
+
+
+Search for a particular customer:
+SELECT *
+FROM CUSTOMER2
+WHERE CUSTOMER_ID = 101;
+
+
+ Apply filtering conditions
+Products priced above ₹400 and with stock available:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE, STOCK
+FROM PRODUCT2
+WHERE PRICE > 400
+AND STOCK > 0;
+
+
+Products belonging to either Skincare or Makeup:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE, CATEGORY_ID
+FROM PRODUCT2
+WHERE CATEGORY_ID IN (1, 2);
+
+
+Products whose names contain the word “Serum”:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+WHERE PRODUCT_NAME LIKE '%Serum%';
+
+
+Products priced below ₹300 or above ₹600:
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+WHERE PRICE < 300
+OR PRICE > 600;
+
+
+ Generate basic business reports
+ Product count and total stock by category
+SELECT CATEGORY_ID,
+COUNT(*) AS TOTAL_PRODUCTS,
+SUM(STOCK) AS TOTAL_STOCK
+FROM PRODUCT2
+GROUP BY CATEGORY_ID
+ORDER BY CATEGORY_ID;
+
+
+Customer order history
+SELECT C.CUSTOMER_ID,
+C.CUSTOMER_NAME,
+O.ORDER_ID,
+O.ORDER_DATE,
+O.TOTAL_AMOUNT,
+O.ORDER_STATUS
+FROM CUSTOMER2 C
+JOIN ORDERS O
+ON C.CUSTOMER_ID = O.CUSTOMER_ID
+ORDER BY O.ORDER_DATE DESC;
+
+
+High-value products
+SELECT PRODUCT_ID, PRODUCT_NAME, PRICE
+FROM PRODUCT2
+WHERE PRICE >= 500
+ORDER BY PRICE DESC;
+
+
+Inventory availability
+SELECT PRODUCT_ID,
+PRODUCT_NAME,
+STOCK,
+CASE
+WHEN STOCK > 0 THEN 'Available'
+ELSE 'Unavailable'
+END AS AVAILABILITY_STATUS
+FROM PRODUCT2
+ORDER BY PRODUCT_ID;
+
+
+
