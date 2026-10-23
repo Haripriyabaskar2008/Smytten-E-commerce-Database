@@ -1,4 +1,4 @@
-                      **SQL Query Implementation for E-Commerce Database**
+                      SQL Query Implementation for E-Commerce Database
  Display all products — SELECT
 SELECT * FROM PRODUCT2;
 
